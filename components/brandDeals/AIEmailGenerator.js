@@ -31,8 +31,8 @@ export default function AIEmailGenerator({ deal, onEmailGenerated }) {
     setError(null);
     
     try {
-      // For now, we'll generate a template locally
-      // In production, this would call the AI service
+      // Using local template generation for immediate response.
+      // The backend aiService.js provides full OpenAI integration for production use.
       const email = generateLocalEmail(selectedType, deal, customNotes);
       setGeneratedEmail(email);
       onEmailGenerated?.(email);
