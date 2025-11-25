@@ -6,8 +6,8 @@ import {
   LuBriefcase, 
   LuClock, 
   LuTrendingUp,
-  LuCheckCircle,
-  LuBarChart3,
+  LuCircleCheck,
+  LuChartBar,
   LuTarget
 } from 'react-icons/lu';
 
@@ -97,7 +97,7 @@ export default function DashboardStats({ stats }) {
         title="Win Rate"
         value={`${winRate}%`}
         subtitle="Deals closed"
-        icon={LuCheckCircle}
+        icon={LuCircleCheck}
         color="bg-gradient-to-br from-green-500 to-teal-600"
         delay={0.4}
       />
@@ -105,7 +105,7 @@ export default function DashboardStats({ stats }) {
         title="Average Deal Size"
         value={formatCurrency(averageDealSize)}
         subtitle="Per deal"
-        icon={LuBarChart3}
+        icon={LuChartBar}
         color="bg-gradient-to-br from-purple-500 to-pink-600"
         delay={0.5}
       />

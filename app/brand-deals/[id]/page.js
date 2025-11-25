@@ -21,9 +21,9 @@ import {
   LuPlus,
   LuPencil,
   LuExternalLink,
-  LuCheckCircle,
+  LuCircleCheck,
   LuClock,
-  LuAlertCircle
+  LuCircleAlert
 } from 'react-icons/lu';
 import DeliverableCard from '@/components/brandDeals/DeliverableCard';
 import DeliverableModal from '@/components/brandDeals/DeliverableModal';
@@ -170,7 +170,7 @@ export default function DealDetailPage() {
     return (
       <div className="flex items-center justify-center min-h-screen bg-gray-50 dark:bg-gray-900">
         <div className="text-center">
-          <LuAlertCircle className="w-16 h-16 text-gray-400 mx-auto mb-4" />
+          <LuCircleAlert className="w-16 h-16 text-gray-400 mx-auto mb-4" />
           <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
             Deal not found
           </h2>
@@ -650,7 +650,7 @@ export default function DealDetailPage() {
                     <div className="border-t border-gray-200 dark:border-gray-700 pt-4">
                       <div className="flex justify-between items-center text-green-600 dark:text-green-400">
                         <span className="flex items-center gap-2">
-                          <LuCheckCircle className="w-4 h-4" />
+                          <LuCircleCheck className="w-4 h-4" />
                           Paid
                         </span>
                         <span className="font-semibold">${totalPaid.toLocaleString()}</span>

@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
-  LuWand2, 
+  LuWandSparkles, 
   LuMail,
   LuCopy,
   LuCheck,
@@ -128,7 +128,7 @@ Best regards`
     <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-6">
       <div className="flex items-center gap-2 mb-4">
         <div className="p-2 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg">
-          <LuWand2 className="w-5 h-5 text-white" />
+          <LuWandSparkles className="w-5 h-5 text-white" />
         </div>
         <div>
           <h3 className="font-semibold text-gray-900 dark:text-white">AI Email Generator</h3>
@@ -196,7 +196,7 @@ Best regards`
           </>
         ) : (
           <>
-            <LuWand2 className="w-5 h-5" />
+            <LuWandSparkles className="w-5 h-5" />
             Generate Email
           </>
         )}

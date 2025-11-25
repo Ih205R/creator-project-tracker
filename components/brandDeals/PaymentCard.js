@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { 
   LuDollarSign, 
   LuCalendar, 
-  LuCheckCircle,
+  LuCircleCheck,
   LuClock,
   LuCreditCard,
   LuReceipt,
@@ -19,7 +19,7 @@ const STATUS_CONFIG = {
   },
   'paid': {
     label: 'Paid',
-    icon: LuCheckCircle,
+    icon: LuCircleCheck,
     color: 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400'
   }
 };
@@ -90,7 +90,7 @@ export default function PaymentCard({ payment, currency = 'USD', onMarkPaid }) {
             )}
             {payment.paidAt && (
               <div className="flex items-center gap-1 text-green-600 dark:text-green-400">
-                <LuCheckCircle className="w-3 h-3" />
+                <LuCircleCheck className="w-3 h-3" />
                 <span>Paid: {new Date(payment.paidAt).toLocaleDateString()}</span>
               </div>
             )}
@@ -128,7 +128,7 @@ export default function PaymentCard({ payment, currency = 'USD', onMarkPaid }) {
           className="w-full mt-3 py-2 text-sm font-medium text-green-600 bg-green-50 dark:bg-green-900/20 dark:text-green-400 rounded-lg hover:bg-green-100 dark:hover:bg-green-900/30 transition-colors"
         >
           <span className="flex items-center justify-center gap-2">
-            <LuCheckCircle className="w-4 h-4" />
+            <LuCircleCheck className="w-4 h-4" />
             Mark as Paid
           </span>
         </motion.button>

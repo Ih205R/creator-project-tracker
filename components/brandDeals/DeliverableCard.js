@@ -6,7 +6,7 @@ import {
   LuPencil, 
   LuTrash2,
   LuExternalLink,
-  LuCheckCircle,
+  LuCircleCheck,
   LuClock,
   LuLoader,
   LuCircle
@@ -30,7 +30,7 @@ const STATUS_CONFIG = {
   },
   'approved': {
     label: 'Approved',
-    icon: LuCheckCircle,
+    icon: LuCircleCheck,
     color: 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400'
   }
 };
