@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "Creator Project Tracker",
+    "slug": "creator-project-tracker",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#6366f1"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.creatorprojecttracker.app",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.creatorprojecttracker.app",
+      "versionCode": 1,
+      "permissions": [
+        "INTERNET",
+        "ACCESS_NETWORK_STATE"
+      ]
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "extra": {
+      "firebaseProjectId": "app1-33f1b",
+      "firebaseApiKey": "AIzaSyB5txnMBnYzOnfBEcPF-vidM35Fm67a5DM",
+      "firebaseMessagingSenderId": "721842592810",
+      "firebaseAppId": "1:721842592810:android:cf23d9947c9d54b7faf753",
+      "firebaseMeasurementId": "G-ABCD123",
+      "apiUrl": "http://10.0.2.2:5000"
+    }
+  }
+}

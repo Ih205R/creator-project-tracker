@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test New Features</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .card {
+            background: white;
+            color: #333;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 20px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            text-align: center;
+            opacity: 0.9;
+            margin-bottom: 40px;
+        }
+        .feature {
+            margin: 20px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        .feature h3 {
+            margin-top: 0;
+            color: #667eea;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .icon {
+            font-size: 1.5em;
+        }
+        .link {
+            display: inline-block;
+            margin: 10px 10px 10px 0;
+            padding: 12px 24px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        .link:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+        .status {
+            display: inline-block;
+            padding: 4px 12px;
+            background: #10b981;
+            color: white;
+            border-radius: 4px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+        ul {
+            margin: 15px 0;
+        }
+        li {
+            margin: 8px 0;
+            list-style: none;
+            padding-left: 25px;
+            position: relative;
+        }
+        li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #10b981;
+            font-weight: bold;
+        }
+        .instructions {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            color: #856404;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .instructions strong {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎉 New Features Test Page</h1>
+    <p class="subtitle">All features are live! Click the links below to test them.</p>
+
+    <div class="card">
+        <div class="instructions">
+            <strong>⚠️ IMPORTANT: Clear Your Browser Cache!</strong>
+            Press <code>Cmd + Shift + R</code> (Mac) or <code>Ctrl + Shift + R</code> (Windows) on each page to see the new features.
+        </div>
+
+        <div class="feature">
+            <h3>
+                <span class="icon">🔐</span>
+                Password Strength Indicator
+                <span class="status">✓ LIVE</span>
+            </h3>
+            <p>Real-time password strength meter with color-coded progress bar.</p>
+            <ul>
+                <li>Red (Weak) → Yellow (Medium) → Green (Strong)</li>
+                <li>Shows 4 requirements: 8+ chars, uppercase, number, special char</li>
+                <li>Try these passwords: "abc" → "Abc123" → "Abc123!"</li>
+            </ul>
+            <a href="http://localhost:3000/signup" target="_blank" class="link">
+                → Test Password Strength
+            </a>
+        </div>
+
+        <div class="feature">
+            <h3>
+                <span class="icon">💼</span>
+                Brand Deals Page
+                <span class="status">✓ LIVE</span>
+            </h3>
+            <p>Full CRUD functionality for managing brand partnerships.</p>
+            <ul>
+                <li>Create, Edit, Delete brand deals</li>
+                <li>Track revenue, status, dates, deliverables</li>
+                <li>Beautiful dashboard with stats</li>
+            </ul>
+            <a href="http://localhost:3000/brand-deals" target="_blank" class="link">
+                → Open Brand Deals
+            </a>
+        </div>
+
+        <div class="feature">
+            <h3>
+                <span class="icon">👥</span>
+                Team Collaboration
+                <span class="status">✓ LIVE (Premium)</span>
+            </h3>
+            <p>Invite up to 5 team members to collaborate.</p>
+            <ul>
+                <li>Invite team members with roles</li>
+                <li>Manage permissions (Admin, Editor, Viewer)</li>
+                <li>Premium feature only</li>
+            </ul>
+            <a href="http://localhost:3000/team" target="_blank" class="link">
+                → Manage Team
+            </a>
+        </div>
+
+        <div class="feature">
+            <h3>
+                <span class="icon">💎</span>
+                Premium Features Hub
+                <span class="status">✓ LIVE</span>
+            </h3>
+            <p>Central hub showing all 6 premium features.</p>
+            <ul>
+                <li>Team Collaboration</li>
+                <li>Advanced AI Tools</li>
+                <li>API Integrations</li>
+                <li>Account Manager, White-Label, Training</li>
+            </ul>
+            <a href="http://localhost:3000/premium" target="_blank" class="link">
+                → View Premium Features
+            </a>
+        </div>
+
+        <div class="feature">
+            <h3>
+                <span class="icon">🏠</span>
+                Test All Features
+            </h3>
+            <p>Quick links to test everything:</p>
+            <a href="http://localhost:3000/" target="_blank" class="link">Home</a>
+            <a href="http://localhost:3000/dashboard" target="_blank" class="link">Dashboard</a>
+            <a href="http://localhost:3000/login" target="_blank" class="link">Login</a>
+        </div>
+
+        <div class="instructions">
+            <strong>📝 Test Account:</strong>
+            Email: test4@gmail.com<br>
+            Password: Mariya1504@allo<br>
+            Plan: Premium (access to all features)
+        </div>
+    </div>
+
+    <script>
+        // Auto-refresh every 30 seconds to check for updates
+        console.log('✅ All features are live and ready to test!');
+        console.log('📋 Features:');
+        console.log('  1. Password Strength Indicator - /signup');
+        console.log('  2. Brand Deals Page - /brand-deals');
+        console.log('  3. Team Collaboration - /team');
+        console.log('  4. Premium Features Hub - /premium');
+    </script>
+</body>
+</html>
