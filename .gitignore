@@ -24,3 +24,8 @@ mobile/ios/build/
 *.keystore
 .expo/
 backend/config/serviceAccountKey.json
+
+# Ignore all .md files except README files
+*.md
+!README.md
+!**/README.md
