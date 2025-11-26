@@ -4,8 +4,8 @@ import { useEffect, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { 
-  LuXCircle, 
-  LuAlertTriangle,
+  LuCircleX, 
+  LuTriangleAlert,
   LuArrowLeft,
   LuRefreshCw,
   LuMessageCircle,
@@ -26,19 +26,19 @@ function ErrorContent() {
       color: 'red'
     },
     canceled: {
-      icon: LuXCircle,
+      icon: LuCircleX,
       title: 'Subscription Canceled',
       description: 'You\'ve canceled the subscription process. No charges were made.',
       color: 'orange'
     },
     session_expired: {
-      icon: LuAlertTriangle,
+      icon: LuTriangleAlert,
       title: 'Session Expired',
       description: 'Your checkout session has expired. Please start the subscription process again.',
       color: 'yellow'
     },
     general: {
-      icon: LuXCircle,
+      icon: LuCircleX,
       title: 'Something Went Wrong',
       description: message || 'We encountered an error processing your subscription. Please try again.',
       color: 'red'
